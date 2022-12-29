@@ -1,0 +1,17 @@
+plugins {
+    id 'java'
+}
+
+group 'tech.strategio'
+version '1.0-SNAPSHOT'
+
+repositories {
+    mavenCentral()
+}
+
+dependencies {
+    testImplementation 'junit:junit:4.13.2'
+    testImplementation 'org.seleniumhq.selenium:selenium-java:4.7.1'
+    testImplementation group: 'org.slf4j', name: 'slf4j-simple', version: '1.6.1'
+    testImplementation group: 'io.github.bonigarcia', name: 'webdrivermanager', version: '3.3.0'
+}
